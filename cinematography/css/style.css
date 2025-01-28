@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #4d4d4d;
+  color: #ffffff;
   background: #fff;
 }
 
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(78, 178, 234, 0.9);
+  background: rgba(78, 178, 234, 0.8);
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 0;
 }
 #fh5co-features .feature-left p a {
-  color: #000 !important;
+  color: #000000 !important;
 }
 
 #fh5co-about,
@@ -1247,7 +1247,7 @@ input[type="text"] {
 .form-control {
   box-shadow: none;
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.7);
   height: 54px;
   font-size: 18px;
   font-weight: 300;

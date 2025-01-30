@@ -63,7 +63,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, figure {
-  color: #000;
+  color: #ffffff;
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 40px;
   margin-bottom: 20px;
   line-height: 1.5;
-  color: #000;
+  color: #ffffff;
 }
 .fh5co-heading p {
   font-size: 18px;
@@ -472,7 +472,7 @@ h1, h2, h3, h4, h5, h6, figure {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: bold;
-  background: #e6e6e6;
+  background: #434343;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -866,12 +866,12 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   margin-bottom: 20px;
   font-size: 18px !important;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
 }
 .fh5co-blog .blog-text .stuff {
   margin: 0;
   padding: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgb(255, 255, 255);
   padding-top: 20px;
 }
 .fh5co-blog .blog-text .stuff li {
@@ -891,7 +891,7 @@ h1, h2, h3, h4, h5, h6, figure {
   float: right;
 }
 .fh5co-blog .blog-text .stuff li:last-child a {
-  color: #000;
+  color: #ffffff;
 }
 .fh5co-blog .blog-text .stuff li:last-child i {
   padding-right: 0;
@@ -907,7 +907,7 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 1.5;
 }
 .fh5co-blog .blog-text h3 a {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 #fh5co-consult {
@@ -1000,17 +1000,17 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 20px 0;
   position: relative;
   padding-left: 40px;
-  color: #000;
+  color: #ffffff;
 }
 .contact-info li i {
   position: absolute;
   top: .3em;
   left: 0;
   font-size: 22px;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
 }
 .contact-info li a {
-  color: #000;
+  color: #ffffff;
 }
 
 .form-control {

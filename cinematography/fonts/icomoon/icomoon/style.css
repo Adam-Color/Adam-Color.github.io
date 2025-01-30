@@ -1368,6 +1368,9 @@
 .icon-suitcase:before {
     content: "\ea20";
 }
+.icon-camera:before {
+    content: "\ea20";
+}
 .icon-swap:before {
     content: "\ea21";
 }

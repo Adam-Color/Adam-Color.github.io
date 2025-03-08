@@ -1,3 +1,5 @@
+/* #4eb2ea */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
@@ -111,21 +113,48 @@ img {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.5rem;
     padding: 0.5rem;
-
+    
 }
 
 .video-item {
     position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    width: 95%;
+    padding-bottom: 58.6%; /* 16:9 Aspect Ratio */
     height: 0;
     overflow: hidden;
+    margin: 0 auto; /* Ensures individual videos are centered in each grid cell */
 }
 
 .video-item iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 90%;
+    border: 3px solid #4eb2ea;
+    border-radius: 15px; /* Add rounded corners */
+}
+
+/* Style for the video section */
+#Commercial, #Narrative, #reel{
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Container for the iframe to control layout */
+.video {
+    display: flex;
+    justify-content: center; /* Centers iframe horizontally */
+    align-items: center; /* Centers iframe vertically if you set height */
+    margin: 20px 0; /* Adds space above and below the video */
+}
+
+/* Resize the iframe */
+.video iframe {
+    width: 80%;  /* Adjust width as needed */
+    max-width: 800px;  /* Maximum width */
+    height: 450px;  /* Adjust height to maintain aspect ratio */
+    border: 5px solid #4eb2ea;
+    border-radius: 15px; /* Add rounded corners */
 }

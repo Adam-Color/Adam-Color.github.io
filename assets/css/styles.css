@@ -113,7 +113,7 @@ img {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.5rem;
     padding: 0.5rem;
-    
+    justify-content: center;
 }
 
 .video-item {
@@ -148,7 +148,8 @@ img {
     justify-content: center; /* Centers iframe horizontally */
     align-items: center; /* Centers iframe vertically if you set height */
     margin: 20px 0; /* Adds space above and below the video */
-}
+    margin: 0 auto;
+    }
 
 /* Resize the iframe */
 .video iframe {
@@ -157,4 +158,44 @@ img {
     height: 450px;  /* Adjust height to maintain aspect ratio */
     border: 5px solid #4eb2ea;
     border-radius: 15px; /* Add rounded corners */
+}
+
+/* mobile devices */
+
+@media (max-width: 600px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .video-item iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 98%;
+        height: 90%;
+        border: 3px solid #4eb2ea;
+        border-radius: 15px; /* Add rounded corners */
+    }
+    .video {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 800px; /* Adjust as needed */
+        padding-bottom: 56.25%; /* Maintains 16:9 aspect ratio */
+        height: 0;
+        margin: 0 auto;
+        overflow: hidden; /* Ensures no weird overflow issues */
+    }
+    
+    .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 98%;
+        height: 98%;
+        border: 3px solid #4eb2ea;
+        border-radius: 15px; /* Add rounded corners */
+    }
 }

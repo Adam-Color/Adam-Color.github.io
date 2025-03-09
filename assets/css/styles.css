@@ -1,0 +1,160 @@
+/* #4eb2ea */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+nav a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+section {
+    margin: 50px 0;
+}
+
+form {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: #00bcd4;
+    color: #121212;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+img {
+    width: 100%; /* Makes image responsive */
+    max-width: 1000px; /* Limits maximum size */
+    height: auto; /* Keeps aspect ratio */
+}
+
+#contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#contact button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+.limited-resize {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+    
+}
+
+.video-item {
+    position: relative;
+    width: 95%;
+    padding-bottom: 58.6%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto; /* Ensures individual videos are centered in each grid cell */
+}
+
+.video-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 90%;
+    border: 3px solid #4eb2ea;
+    border-radius: 15px; /* Add rounded corners */
+}
+
+/* Style for the video section */
+#Commercial, #Narrative, #reel{
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Container for the iframe to control layout */
+.video {
+    display: flex;
+    justify-content: center; /* Centers iframe horizontally */
+    align-items: center; /* Centers iframe vertically if you set height */
+    margin: 20px 0; /* Adds space above and below the video */
+}
+
+/* Resize the iframe */
+.video iframe {
+    width: 80%;  /* Adjust width as needed */
+    max-width: 800px;  /* Maximum width */
+    height: 450px;  /* Adjust height to maintain aspect ratio */
+    border: 5px solid #4eb2ea;
+    border-radius: 15px; /* Add rounded corners */
+}

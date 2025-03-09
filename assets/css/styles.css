@@ -162,7 +162,7 @@ img {
 
 /* mobile devices */
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .video-grid {
         grid-template-columns: 1fr;
         justify-content: center;

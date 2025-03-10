@@ -212,3 +212,17 @@ img {
         border-radius: 15px; /* Add rounded corners */
     }
 }
+
+/* tablet devices */
+
+@media (max-width: 1500px) {
+   .video-item iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 98.2%;
+        height: 90%;
+        border: 3px solid #4eb2ea;
+        border-radius: 15px; /* Add rounded corners */
+    }
+}

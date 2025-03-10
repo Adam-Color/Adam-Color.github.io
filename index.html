@@ -5,20 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Blair-Smith - Colorist</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/Colorist_Square.jpg">
 </head>
 <body>
     <header>
         <img src="assets/images/LOGO.png">
         <nav>
+            <!-- a is deselected, b is selected-->
+            <b href="index.html">Home</b>
             <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
+    <h2>Welcome to my online portfolio!</h2> <!-- for spacing -->
+
+    <section id="mission-container" class="flex-container">
+        <section id="profile" class="flex-child bordered-image">
+            <img src="assets/images/Colorist_Square.jpg">
+        </section>
+    
+        <section id="mission" class="flex-child mission-text">
+            <h1>Why hire me as your Colorist?</h1>
+            <h2>Here are three reasons:</h2>
+            <h4>- You want your creative vision realized</h4>
+            <h4>- You care about accurate results</h4>
+            <h4>- You need to draw your audience in</h4>
+        </section>
+    </section>
+
     <section id="reel">
-        <h2>Reel</h2>
-        <p>Here is my most recent color reel:</p>
+        <h2>Here is my most recent reel:</h2>
             <div class="video"><iframe src="https://player.vimeo.com/video/1063929123" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+    </section>
+
+    <section id="contact-me">
+        <h1>Have a project in mind? </h1>
+        <h3>Reach out to me!</h3>
+
+        <form action="https://formspree.io/f/mnnparel" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="limited-resize" required></textarea>
+            </div>
+
+
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>

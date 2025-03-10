@@ -226,10 +226,11 @@ img {
 
 .flex-child {
     flex: 1;
+    margin: 0 auto;
 }  
 .flex-child:first-child {
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
 } 
 
 /* Container for the iframe to control layout */
@@ -252,7 +253,7 @@ img {
 
 /* mobile devices */
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     .video-grid {
         grid-template-columns: 1fr;
         justify-content: center;
@@ -359,18 +360,11 @@ img {
     
     .flex-child {
         flex: 1;
+        align-self: center;
     }  
     .flex-child:first-child {
         margin-right: 20px;
         margin-left: 20px;
         align-self: center;
     } 
-
-    @media (max-width: 2300px) {
-        .flex-container {
-            width: 100%;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-    }
 }

@@ -1,5 +1,33 @@
 /* #4eb2ea */
 
+h2, h3 {
+    font-style: italic;
+}
+
+@media (min-width: 900px) {
+    h1 { 
+        font-size: 60px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
     background-color: #121212;
@@ -22,6 +50,7 @@ nav a {
     margin: auto;
 }
 nav b {
+    /* selected */
     color: #4eb2ea;
     background: #121212;
     text-decoration: none;
@@ -39,7 +68,7 @@ form {
     background: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 600px;
     margin: auto;
 }
 
@@ -61,7 +90,6 @@ button {
 }
 
 nav a.active {
-    font-weight: bold;
     color: #ffffff;
     text-decoration: underline;
 }
@@ -111,12 +139,12 @@ img {
 }
 
 #contact button:hover {
-    background-color: #0056b3;
+    background-color: #4eb2ea;
 }
 
 .limited-resize {
     resize: vertical;
-    min-height: 100px;
+    min-height: 200px;
     max-height: 300px;
 }
 
@@ -154,6 +182,46 @@ img {
     text-align: center;
 }
 
+#about {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#profile img{
+    width: 100%;
+    max-width: 400px;
+    height: auto; /* Keeps aspect ratio */
+}
+
+.bordered-image {
+    border: 5px solid #4eb2ea;
+    border-radius: 15px; /* Add rounded corners */
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.mission-text {
+    flex: 1;
+    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.flex-child {
+    flex: 1;
+}  
+.flex-child:first-child {
+    margin-right: 20px;
+    margin-left: 20px;
+} 
 
 /* Container for the iframe to control layout */
 .video {
@@ -162,7 +230,7 @@ img {
     align-items: center; /* Centers iframe vertically if you set height */
     margin: 20px 0; /* Adds space above and below the video */
     margin: 0 auto;
-    }
+}
 
 /* Resize the iframe */
 .video iframe {
@@ -211,6 +279,46 @@ img {
         border: 3px solid #4eb2ea;
         border-radius: 15px; /* Add rounded corners */
     }
+    nav a, nav b {
+        color: #4eb2ea;
+        background: #1e1e1e;
+        text-decoration: none;
+        margin: 0 15px;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 1%;
+        width: 300px;
+        margin: auto;
+    }
+    nav b {
+        /* selected */
+        background: #121212;
+    }
+    #about {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .flex-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .flex-child {
+        flex: 1;
+    }  
+    .flex-child:first-child {
+        max-width: 50%;
+        margin: 0 auto;
+    } 
+    .mission-text {
+        text-align: center;
+    }
+    form {
+        width: 300px;
+        max-width: 90%;
+    }
 }
 
 /* tablet devices */
@@ -224,5 +332,36 @@ img {
         height: 90%;
         border: 3px solid #4eb2ea;
         border-radius: 15px; /* Add rounded corners */
+    }
+    #about {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+        #about {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .flex-container {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .flex-child {
+        flex: 1;
+    }  
+    .flex-child:first-child {
+        margin-right: 20px;
+        margin-left: 20px;
+        align-self: center;
+    } 
+
+    @media (max-width: 2300px) {
+        .flex-container {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+        }
     }
 }

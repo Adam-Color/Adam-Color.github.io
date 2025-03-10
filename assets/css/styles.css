@@ -68,9 +68,12 @@ form {
     background: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
-    width: 600px;
-    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
+
 
 input, textarea {
     width: 100%;
@@ -198,6 +201,12 @@ img {
     border-radius: 15px; /* Add rounded corners */
     max-width: fit-content;
     max-height: fit-content;
+}
+
+.about-image {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 5%;
 }
 
 .mission-text {

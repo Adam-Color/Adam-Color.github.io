@@ -220,7 +220,7 @@ img {
     text-align: center;
     justify-content: center;
     width: 100%;
-    max-width: 100rem;
+    max-width: 80rem;
     margin: 0 auto;
 }
 
@@ -273,8 +273,8 @@ img {
         justify-content: center;
         align-items: center;
         width: 100%;
-        max-width: 800px; /* Adjust as needed */
-        padding-bottom: 56.25%; /* Maintains 16:9 aspect ratio */
+        max-width: 90%; /* Adjust as needed */
+        padding-bottom: 51.1%; /* Maintains 16:9 aspect ratio */
         height: 0;
         margin: 0 auto;
         overflow: hidden; /* Ensures no weird overflow issues */
@@ -285,7 +285,7 @@ img {
         top: 0;
         left: 0;
         width: 98%;
-        height: 98%;
+        height: 97%;
         border: 3px solid #4eb2ea;
         border-radius: 15px; /* Add rounded corners */
     }
@@ -333,7 +333,7 @@ img {
 
 /* tablet devices */
 
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
    .video-item iframe {
         position: absolute;
         top: 0;

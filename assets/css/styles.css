@@ -151,6 +151,30 @@ img {
     max-height: 300px;
 }
 
+.socials-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 0.5rem; /* Space between icons */
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.socials-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.socials-item img {
+    width: 75%;
+    max-width: 50px; /* Adjust this as needed */
+    height: auto;
+}
+
 
 .video-grid {
     display: grid;
@@ -220,7 +244,7 @@ img {
     text-align: center;
     justify-content: center;
     width: 100%;
-    max-width: 80rem;
+    max-width: 75rem;
     margin: 0 auto;
 }
 

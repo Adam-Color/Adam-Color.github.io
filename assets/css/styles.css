@@ -226,6 +226,8 @@ img {
     width: 75%;
     margin: 0 auto;
     margin-top: 5%;
+    border: 5px solid #4eb2ea;
+    border-radius: 15px; /* Add rounded corners */
 }
 
 .mission-text {

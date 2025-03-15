@@ -218,19 +218,16 @@ img {
     width: 100%;
     max-width: 400px;
     height: auto; /* Keeps aspect ratio */
-}
-
-.bordered-image {
     border: 5px solid #4eb2ea;
     border-radius: 15px; /* Add rounded corners */
-    max-width: fit-content;
-    max-height: fit-content;
 }
 
 .about-image {
     width: 75%;
     margin: 0 auto;
     margin-top: 5%;
+    border: 5px solid #4eb2ea;
+    border-radius: 15px; /* Add rounded corners */
 }
 
 .mission-text {
@@ -251,7 +248,8 @@ img {
 .flex-child {
     flex: 1;
     margin: 0 auto;
-}  
+}
+
 .flex-child:first-child {
     margin-right: 20px;
     margin-left: 50px;
@@ -269,10 +267,10 @@ img {
 /* Resize the iframe */
 .video iframe {
     width: 80%;  /* Adjust width as needed */
-    max-width: 800px;  /* Maximum width */
+    max-width: 800px;
     height: 450px;  /* Adjust height to maintain aspect ratio */
     border: 5px solid #4eb2ea;
-    border-radius: 15px; /* Add rounded corners */
+    border-radius: 15px;
 }
 
 /* mobile devices */
@@ -390,5 +388,5 @@ img {
         margin-right: 20px;
         margin-left: 20px;
         align-self: center;
-    } 
+    }
 }

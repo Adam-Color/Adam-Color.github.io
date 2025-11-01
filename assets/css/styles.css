@@ -203,6 +203,18 @@ img {
     border-radius: 15px; /* Add rounded corners */
 }
 
+.info-box {
+    position: absolute;
+    top: calc(88%); /* Places it right below the iframe’s border */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 0 0 10px 10px;
+}
+
 /* Style for the video section */
 #Commercial, #Narrative, #reel{
     justify-content: center;

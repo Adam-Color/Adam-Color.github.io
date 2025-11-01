@@ -189,8 +189,8 @@ img {
     width: 95%;
     padding-bottom: 58.6%; /* 16:9 Aspect Ratio */
     height: 0;
-    overflow: hidden;
-    margin: 0 auto; /* Ensures individual videos are centered in each grid cell */
+    overflow: visible;
+    margin: 0 auto 1.5rem auto;
 }
 
 .video-item iframe {
@@ -199,8 +199,21 @@ img {
     left: 0;
     width: 98.8%;
     height: 90%;
+    background-color: #000000;
     border: 3px solid #4eb2ea;
     border-radius: 15px; /* Add rounded corners */
+}
+
+.info-box {
+    position: absolute;
+    top: calc(88%); /* Places it right below the iframe’s border */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 0 0 10px 10px;
 }
 
 /* Style for the video section */

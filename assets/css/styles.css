@@ -4,6 +4,11 @@ h2, h3 {
     font-style: italic;
 }
 
+a.permissions-link {
+    color: #4eb2ea;
+    text-decoration: none;
+}
+
 @media (min-width: 900px) {
     h1 { 
         font-size: 60px;
@@ -286,9 +291,129 @@ img {
     border-radius: 15px;
 }
 
+.software-card {
+    display: flex;
+    background: #1e1e1e;
+    border: 3px solid #4eb2ea;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1600px;
+    gap: 30px;
+    align-items: center;
+}
+
+.software-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30rem; /* Limit the container width */
+    margin: 0 auto;
+}
+
+.software-image img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+
+.software-info {
+    flex: 1;
+    text-align: left;
+}
+
+.software-info h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #4eb2ea;
+}
+
+.software-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.software-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.software-buttons .btn-download {
+    background: #00bcd4;
+    color: #121212;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.software-buttons .btn-github {
+    background: #4eb2ea;
+    color: #121212;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.software-buttons .btn-download:hover {
+    background: #00acc1;
+}
+
+.software-buttons .btn-github:hover {
+    background: #3a9fd4;
+}
+
+
+@media (max-width: 768px) {
+    .software-image {
+        max-width: 300px;
+    }
+    
+    .software-image img {
+        max-width: 300px;
+    }
+}
+/* Mobile responsive */
+@media (max-width: 950px) {
+    .software-card {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .software-info {
+        text-align: center;
+    }
+    
+    .software-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .software-buttons a {
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
+}
+
 /* mobile devices */
 
 @media (max-width: 950px) {
+    nav a {
+      font-size: 12px;
+    }
+    nav b {
+      font-size: 15px;
+    }
     .video-grid {
         grid-template-columns: 1fr;
         justify-content: center;

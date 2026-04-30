@@ -1,5 +1,9 @@
 /* #4eb2ea */
 
+html {
+  scroll-behavior: smooth;
+}
+
 h2, h3 {
     font-style: italic;
 }
@@ -10,7 +14,7 @@ a.permissions-link {
 }
 
 @media (min-width: 900px) {
-    h1 { 
+    h1 {
         font-size: 60px;
         margin-bottom: 15px;
         margin-top: 15px;
@@ -34,7 +38,7 @@ a.permissions-link {
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-family: Georgia;
     background-color: #121212;
     color: #ffffff;
     text-align: center;
@@ -159,7 +163,7 @@ img {
 .socials-grid {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     gap: 0.5rem; /* Space between icons */
     padding: 0.5rem;
     flex-wrap: wrap;
@@ -250,7 +254,7 @@ img {
 
 .mission-text {
     flex: 1;
-    text-align: left;
+    text-align: center;
 }
 
 .flex-container {
@@ -271,7 +275,7 @@ img {
 .flex-child:first-child {
     margin-right: 20px;
     margin-left: 50px;
-} 
+}
 
 /* Container for the iframe to control layout */
 .video {
@@ -377,7 +381,7 @@ img {
     .software-image {
         max-width: 300px;
     }
-    
+
     .software-image img {
         max-width: 300px;
     }
@@ -388,16 +392,16 @@ img {
         flex-direction: column;
         padding: 20px;
     }
-    
+
     .software-info {
         text-align: center;
     }
-    
+
     .software-buttons {
         justify-content: center;
         width: 100%;
     }
-    
+
     .software-buttons a {
         flex: 1;
         min-width: 120px;
@@ -439,7 +443,7 @@ img {
         margin: 0 auto;
         overflow: hidden; /* Ensures no weird overflow issues */
     }
-    
+
     .video iframe {
         position: absolute;
         top: 0;
@@ -474,14 +478,14 @@ img {
         max-width: 100%;
         margin: 0 auto;
     }
-    
+
     .flex-child {
         flex: 1;
-    }  
+    }
     .flex-child:first-child {
         max-width: 50%;
         margin: 0 auto;
-    } 
+    }
     .mission-text {
         text-align: center;
     }
@@ -517,11 +521,11 @@ img {
         max-width: 100%;
         margin: 0 auto;
     }
-    
+
     .flex-child {
         flex: 1;
         align-self: center;
-    }  
+    }
     .flex-child:first-child {
         margin-right: 20px;
         margin-left: 20px;

@@ -260,6 +260,7 @@ img {
 .mission-card {
     display: flex;
     padding: 30px;
+    background-image: radial-gradient(#202020, #121212 60%);
     margin: 20px auto;
     max-width: 1600px;
     gap: 30px;
@@ -303,7 +304,7 @@ img {
     text-align: center;
     justify-content: center;
     width: 100%;
-    max-width: 75rem;
+    max-width: 85rem;
     margin: 0 auto;
 }
 
@@ -433,7 +434,17 @@ img {
         padding: 20px;
     }
 
+    .mission-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
     .software-info {
+        text-align: center;
+    }
+
+    .mission-info {
         text-align: center;
     }
 
@@ -447,6 +458,10 @@ img {
         min-width: 120px;
         text-align: center;
     }
+
+    .mission-image {
+        max-width: 0px;
+    }
 }
 
 /* mobile devices */
@@ -456,7 +471,7 @@ img {
       font-size: 12px;
     }
     nav b {
-      font-size: 15px;
+      font-size: 13px;
     }
     .video-grid {
         grid-template-columns: 1fr;

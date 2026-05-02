@@ -267,6 +267,12 @@ img {
     align-items: center;
 }
 
+#mission h1 a {
+  color: white;           /* Sets text to white */
+  text-decoration: none;  /* Removes underline */
+  cursor: pointer;        /* Shows the hand cursor on hover */
+}
+
 .mission-image {
     flex: 1;
     display: flex;
@@ -444,6 +450,10 @@ img {
         text-align: center;
     }
 
+    #mission {
+        max-width: 100%;
+    }
+
     .mission-info {
         text-align: center;
     }
@@ -460,7 +470,7 @@ img {
     }
 
     .mission-image {
-        max-width: 0px;
+        display: none;
     }
 }
 

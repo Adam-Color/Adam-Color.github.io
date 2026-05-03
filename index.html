@@ -20,25 +20,47 @@
         </nav>
     </header>
 
-    <h2> </h2>
-
-    <section id="mission-container" class="flex-container">
-        <section id="profile" class="flex-child">
-            <img src="assets/images/Colorist_Square.jpg">
-        </section>
-    
-        <section id="mission" class="flex-child mission-text">
-            <h1>Why hire me for your project?</h1>
-            <h2>Here are three reasons:</h2>
-            <h4>- You want your creative vision realized</h4>
-            <h4>- You care about color accurate results</h4>
-            <h4>- You need to enhance your Cinematography</h4>
-        </section>
+    <section id="reel">
+        <div class="video"><iframe src="https://player.vimeo.com/video/1050612691?color=ffffff" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
     </section>
 
-    <section id="reel">
-        <h2>Here is my most recent reel:</h2>
-            <div class="video"><iframe src="https://player.vimeo.com/video/1050612691?color=ffffff" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+    <section id="mission-container" class="flex-container">
+        <section id="mission" class="flex-child mission-text">
+            <h1><a href="#mission-container" class="scroll-link">Why hire me for your project?</a></h1>
+            <div class="mission-card">
+                <div class="mission-info">
+                    <h3>
+                        Story-driven Creative Looks
+                    </h3>
+                    <p>Each project deserves to be executed with care and attention to detail. I ensure that clients are involved in the full look development process, before I even touch the grade. You don't need to be a color expert to get the results you want - I'll work with you to understand your vision and deliver a look that meets your needs.</p>
+                </div>
+                <div class="mission-image">
+                    <img src="assets/images/mission/looks.png" alt="Looks">
+                </div>
+            </div>
+            <div class="mission-card">
+                <div class="mission-image">
+                    <img src="assets/images/mission/remote_workflows.png" alt="Remote Workflows">
+                </div>
+                <div class="mission-info">
+                    <h3>
+                        Remote Color Grading Workflows
+                    </h3>
+                    <p>I am capable of working remotely with clients from around the world. I use software such as Blackmagic Design Remote Monitor, conform.tools, and my own custom software to ensure that regardless of your location, we can still collaborate efficiently and effectively.</p>
+                </div>
+            </div>
+            <div class="mission-card">
+                <div class="mission-info">
+                    <h3>
+                        SMPTE Compliant Color Suite
+                    </h3>
+                    <p>My SMPTE ST 2080-3:2017 compliant color suite features a calibrated reference monitor, Medialight accent lighting, and a 24 terabyte NAS backup server. This setup enables fast turnaround times, a color accurate workflow, and robust data backup.</p>
+                </div>
+                <div class="mission-image">
+                    <img src="assets/images/mission/color_suite.png" alt="Color Suite">
+                </div>
+            </div>
+        </section>
     </section>
 
     <section id="contact-me">
@@ -60,7 +82,6 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" class="limited-resize" required></textarea>
             </div>
-
 
             <button type="submit">Send</button>
         </form>

@@ -70,7 +70,7 @@ nav b {
 }
 
 section {
-    margin: 50px 0;
+    margin: 25px 0;
 }
 
 form {
@@ -271,6 +271,7 @@ img {
   color: white;           /* Sets text to white */
   text-decoration: none;  /* Removes underline */
   cursor: pointer;        /* Shows the hand cursor on hover */
+  margin: 10px 0;
 }
 
 .mission-image {

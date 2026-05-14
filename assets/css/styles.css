@@ -416,6 +416,7 @@ img {
     font-weight: bold;
     cursor: pointer;
     display: inline-block;
+    text-align: center;
 }
 
 .software-buttons .btn-download:hover {

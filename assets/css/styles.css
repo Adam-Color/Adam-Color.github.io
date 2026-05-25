@@ -141,6 +141,31 @@ img {
     box-sizing: border-box;
 }
 
+.form-group > label[for="HDR"] {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.radio-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 4px;
+}
+
+.checkbox-group {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="radio"] {
+    accent-color: #4eb2ea;
+    width: 16px;
+    height: 16px;
+}
+
 #contact button {
     width: 100%;
     padding: 10px;
@@ -426,6 +451,22 @@ img {
     background: #3a9fd4;
 }
 
+.clickme-button {
+    background: #4eb2ea;
+    color: #121212;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.clickme-button:hover {
+    background: #3a9fd4;
+}
 
 @media (max-width: 768px) {
     .software-image {

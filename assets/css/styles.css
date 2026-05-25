@@ -451,6 +451,22 @@ img {
     background: #3a9fd4;
 }
 
+.clickme-button {
+    background: #4eb2ea;
+    color: #121212;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.clickme-button:hover {
+    background: #3a9fd4;
+}
 
 @media (max-width: 768px) {
     .software-image {
